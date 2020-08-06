@@ -17,19 +17,19 @@ The server will bind to port 3000 by default.
 ## GET /devices
 Make a GET request to http://localhost:3000/devices to fetch a list of your doorbells
 
-## GET /device/<device name>
+## GET /device/[device name]
 Make a GET request to http://localhost:3000/device/<device name> fetch info for that device
 
-## GET /device/<device name>/health
+## GET /device/[device name]/health
 Make a GET request to http://localhost:3000/device/<device name>/health to get health information for that device
 
-## GET /device/<device name>/liveview
+## GET /device/[device name]/liveview
 Make a GET request to http://localhost:3000/device/<device name>/liveview to initiate a live stream for that device (only returns livestream metadata at the moment)
 
-## GET /device/<device name>/events
+## GET /device/[device name]/events
 Make a GET request to http://localhost:3000/device/<device name>/events to fetch a list of events (motion/rings/liveviews) for that device
 
-## GET /device/<device name>/<dingId>/url
+## GET /device/[device name]/[dingId]/url
 Make a GET request to http://localhost:3000/device/<device name>/<dingId>/url to fetch the video URL of the given dingId for the given device (dingId is the dingIdStr returned by the events request)
 
 # Web sockets
